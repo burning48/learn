@@ -24,6 +24,15 @@
                toolbarPath="sampleGroup"
                id="com.example.hello.actions.SampleAction">
          </action>
+         <action 
+               label="邮件信息"
+               icon="icons/sample.gif"
+               class="com.example.hello.actions.MailAction"
+               tooltip="邮件信息"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="com.example.hello.actions.MailAction"> 
+         </action>
       </actionSet>
    </extension>
 
