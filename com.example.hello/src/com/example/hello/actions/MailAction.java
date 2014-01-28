@@ -34,13 +34,19 @@ public class MailAction implements IWorkbenchWindowActionDelegate {
 			"Hello, Eclipse world");*/
 		 MailConfig mail=new MailConfig(); 
 	        
-	        String popServer="server"; 
-	        String popUser="juanjuaner48"; 
+	        String popServer="pop.gmail.com"; 
+	        String popUser="mailweibo2"; 
 	        String popPassword="111220048"; 
 	        
 	        // 设置需要过滤的关键字：发件人和邮件主题
 	        String [] strFrom=new String[] {"707459982"}; 
 	        String [] strSubject=new String[] {"test"}; 
+	        
+	        mail.setPopServer(popServer);
+	        mail.setPopPassword(popPassword);
+	        mail.setPopUser(popUser);
+	        mail.setStrFrom(strFrom);
+	        mail.setStrSubject(strSubject);
 	        
 	        MailConfig[] mc =new MailConfig [] { mail }; 
 	        MailDialog md=new MailDialog(mc); 

@@ -1,6 +1,7 @@
 package com.example.hello.actions;
 
 import java.awt.BorderLayout;
+
 import java.awt.FlowLayout;
 import java.io.IOException;
 import java.util.Properties;
@@ -162,7 +163,7 @@ public class MailDialog extends JDialog {
      
            // 给出服务器，用户名，密码连接服务器
             store = session.getStore("pop3"); 
-            store.connect(mc.getPopServer(), mc.getPopUser(),mc.getPopPassword()); 
+            store.connect(mc.getPopServer(),mc.getPopUser(),mc.getPopPassword()); 
             
             // 取得默认的邮件 Folder 
             folder = store.getDefaultFolder(); 
